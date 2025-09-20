@@ -47,7 +47,7 @@ stage("UploadArtifact") {
                     groupId: 'QA',
                     version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
                     repository: 'java-app',
-                    credentialsId: 'sonartypecred',
+                    credentialsId: 'nexus-cred',
                     artifacts: [
                         [artifactId: 'java-tomcat-sample',
                          classifier: '',

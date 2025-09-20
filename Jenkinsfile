@@ -54,8 +54,8 @@ stages{
 //                          file: 'target/java-tomcat-maven-example.war',
 //                          type: 'war']
 //                     ]
-                )
-            }
-        }
+//                 )
+//             }
+//         }
 }
 }

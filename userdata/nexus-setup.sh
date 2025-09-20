@@ -80,7 +80,7 @@ sleep 30
 # Check if Nexus is running
 if systemctl is-active --quiet nexus; then
     # Get server IP address
-    IP_ADDRESS=$(hostname -I | awk '{print $1}')
+    IP_ADDRESS=$(hostname -I | awk '{print $2}')
     
     echo "=================================================="
     echo "Nexus installation completed successfully!"

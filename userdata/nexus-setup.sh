@@ -76,6 +76,7 @@ sudo systemctl start nexus
 # Wait for Nexus to start
 echo "Waiting for Nexus to start (this may take a few minutes)..."
 sleep 30
+sudo systemctl status nexus
 
 # Check if Nexus is running
 if systemctl is-active --quiet nexus; then

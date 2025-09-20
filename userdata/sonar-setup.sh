@@ -131,6 +131,8 @@ systemctl restart nginx
 # Firewall rules
 ufw allow 80,9000,9001/tcp || true
 
+sudo systemctl status sonarqube
+
 # Get server IP
 SERVER_IP=$(hostname -I | awk '{print $2}')
 

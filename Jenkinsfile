@@ -46,7 +46,7 @@ stage("UploadArtifact") {
                     nexusUrl: '192.168.56.5:8081/',
                     groupId: 'QA',
                     version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
-                    repository: 'java-app',
+                    repository: 'Java-app',
                     credentialsId: 'nexus-cred',
                     artifacts: [
                         [artifactId: 'java-tomcat-sample',
